@@ -1,0 +1,45 @@
+/* Photo by <a href="https://unsplash.com/@saffu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Saffu</a> on <a href="https://unsplash.com/s/photos/flowers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/   
+
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 60px;
+}
+
+#flower {
+    height: 100%;
+    width: 100%;
+}
+
+.non-form {
+    background-color: rgb(232, 231, 231);
+    height: 35%;
+}
+
+.form {
+    background-color: white;
+    height: 30%;
+}
+
+#right {
+    width: 65%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+}
+
+#left {
+    width: 35%;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+}
