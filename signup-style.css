@@ -1,12 +1,18 @@
 /* Photo by <a href="https://unsplash.com/@saffu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Saffu</a> on <a href="https://unsplash.com/s/photos/flowers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 */   
-
+html {
+    overflow: hidden;
+}
 
 body {
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 }
 
 h1 {
@@ -16,30 +22,72 @@ h1 {
 }
 
 #flower {
-    height: 100%;
+    height: 100vh;
     width: 100%;
-}
-
-.non-form {
-    background-color: rgb(232, 231, 231);
-    height: 35%;
+    margin: 0;
 }
 
 .form {
     background-color: white;
     height: 30%;
+    margin:0;
+    box-shadow: 0 5px 8px 0 #e0e0e0;
+    padding: 1em 0px 0px 3.2em;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
 #right {
-    width: 65%;
+    width: 70%;
     height: 100vh;
-    padding: 0%;
-    margin: 0%;
+    padding: 0 0 0 0;
+    margin: 0;
+    background-color: rgb(241, 238, 238);
 }
 
 #left {
-    width: 35%;
-    height: 100vh;
-    padding: 0%;
-    margin: 0%;
+    min-width: 450px;
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.text1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#above-form {
+    height: 30%;
+    padding: 0 0px 0px 3.2em;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#below-form {
+    height: 40%;
+    padding: 2.5em 0px 0px 3.2em;
+}
+
+#create-account {
+    padding: 0.7em 2.7em;
+    color: white;
+    background-color: rgb(213, 106, 167);
+    border-color: rgb(198, 81, 147);
+    border-style: double;
+    font-size: 1.08em;
+    font-weight: 600;
+    border-radius: .5em;
+    box-shadow: 0 5px 8px 0 #e0e0e0;
+}
+
+#text13 {
+    padding-bottom: 1.1em;
 }
