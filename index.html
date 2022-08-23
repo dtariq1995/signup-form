@@ -21,45 +21,45 @@
         
         <div id="above-form">
 
-            <div id="text11" class="text1"><h3>This is not a real online service! You know you need something like this in your life to 
-                help you realize your deepest dreams.</h3><h3>Sign up <em>now</em> to get started.</h3></div>
-            <div id="text13" class="text1"><h3>You <em>know</em> you want to.</h3></div>
+            <div><p class="text1">This is not a real online service! You know you need something like this in your life to 
+                help you realize your deepest dreams.</p><p class="text1">Sign up <em>now</em> to get started.</p></div>
+            <div><p class="text2">You <em>know</em> you want to.</p></div>
             
         </div>
 
         
-        <div class="form"><h2>Let's do this!</h2>
+        <div class="form"><p class="formText">Let's do this!</p>
 
         <form action="example.com/path" method="post">
 
             <p>
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" placeholder="Joe...">
+                <label for="first_name">FIRST NAME</label>
+                <input type="text" id="first_name">
             </p>
 
             <p>
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" placeholder="Shmoe...">
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name">
             </p>
 
             <p>
-                <label for="user_email">Email Address:</label>
-                <input type="email" id="user_email" name="email" placeholder="you@example.com">
+                <label for="user_email">EMAIL ADDRESS</label>
+                <input type="email" id="user_email" name="email">
             </p>
 
             <p>
-                <label for="phone">Phone Number:</label> 
-                <input type="tel" id="phone" name="telphone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"  title="Ten digits code" required/>
+                <label for="phone">PHONE NUMBER</label> 
+                <input type="tel" id="phone" name="telephone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"  title="Ten digits code" required/>
             </p>
             
             <p>
-                <label for="user_password">Password:</label>
-                <input id="user_password" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
+                <label for="user_password">PASSWORD</label>
+                <input id="user_password" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" required>
             </p>
         
             <p>
-                <label for="password_two">Confirm Password:</label>
-                <input id="password_two" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Verify Password" required>
+                <label for="password_two">CONFIRM PASSWORD</label>
+                <input id="password_two" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" required>
             </p>
 
         </div>
@@ -68,7 +68,7 @@
         <div id="below-form">
 
             <input id="create-account" type="button" value="Create Account"/>
-            <h3>Already have an account? Log in.</h3>
+            <p class="loginText"> Already have an account? <a href="url.com">Log in.</a></p>
     
             </form>
         </div>
