@@ -176,3 +176,12 @@ input {
 .credits a {
     color:rgb(252, 163, 215);
 }
+
+.form-control.error {
+    border-color: #e74c3c;
+}
+
+.form-control.success {
+    border-color: #2ecc71;
+}
+
