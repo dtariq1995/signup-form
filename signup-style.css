@@ -1,5 +1,14 @@
-/* Photo by <a href="https://unsplash.com/@saffu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Saffu</a> on <a href="https://unsplash.com/s/photos/flowers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-*/   
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: Zen-Maru-Gothic;
+    src: url(./Zen_Maru_Gothic/ZenMaruGothic-Regular.ttf);
+}
+
 html {
     overflow: hidden;
 }
@@ -11,13 +20,15 @@ body {
     margin: 0px;
     padding: 0px;
     min-height: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: Zen-Maru-Gothic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1 {
-    color: black;
-    font-family: 'Fascinate Inline', cursive;
-    font-size: 60px;
+    color: rgb(255, 255, 255);
+    font-family: 'Norse-Bold';
+    font-size: 7em;
+    margin: 0;
+    padding: 0;
 }
 
 #flower {
@@ -28,20 +39,21 @@ h1 {
 
 .form {
     background-color: white;
-    height: 35%;
+    height: 23em;
     margin:0;
-    box-shadow: 0 5px 8px 0 #e0e0e0;
+    box-shadow: 0 0.5em 1em 0 #d7d7d7;
     padding: 1em 0px 0px 3.2em;
 }
 
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 0.5em;
 }
 
 #right {
-    width: 70%;
+    width: 65%;
+    min-width: 0.5em;
     height: 100vh;
     padding: 0 0 0 0;
     margin: 0;
@@ -49,11 +61,15 @@ form {
 }
 
 #left {
-    min-width: 450px;
-    width: 30%;
+    position: relative;
+    min-width: 0.5em;
+    width: 35%;
     height: 100%;
     padding: 0;
     margin: 0;
+    background: url(./background-flower-modified.jpg);
+    background-size: cover;
+    height: 100vh;
 }
 
 .text1 {
@@ -69,7 +85,7 @@ form {
 }
 
 #above-form {
-    height: 35%;
+    height: 20em;
     padding: 0 0px 0px 3.2em;
     flex-direction: column;
     display: flex;
@@ -102,7 +118,8 @@ label {
     color: rgb(213, 106, 167);
     font-weight: 400;
     display: block;
-    font-size: 11px;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
 }
 
 a {
@@ -119,4 +136,39 @@ a {
 .formText {
     font-size: 1.3em;
     font-weight: 500;
+}
+
+input {
+    padding: 0.3em;
+    margin-top: 0.3em;
+    font-family: inherit;
+    font-size: 1em;
+    width: 15em;
+}
+
+#sidebar {
+    background-color: #9191917c;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 7em;
+}
+
+.odin {
+    height: 9em;
+}
+
+.credits {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: fixed;
+    top: 50em;
+    left: 11em;
+    font-weight: 800;
+    font-size: 1.2em;
+    color: white;
+    font-family: Zen-Maru-Gothic;
 }
