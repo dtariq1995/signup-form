@@ -1,7 +1,7 @@
-const form = document.getElementById('form');
-const email = document.getElementById('user_email');
-const pwd = document.getElementById('user_password');
-const cpwd = document.getElementById('password_two');
+const form = document.querySelector('#form');
+const email = document.querySelector('#user_email');
+const pwd = document.querySelector('#user_password');
+const cpwd = document.querySelector('#password_two');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -22,6 +22,20 @@ function checkInputs() {
     } else {
         setSuccessFor(email);
     }
+
+    if (pwdValue === '') {
+		setErrorFor(pwd, 'Password cannot be blank');
+	} else {
+		setSuccessFor(pwd);
+	}
+
+    if(cpwdValue === '') {
+		setErrorFor(cpwd, 'Confirm Password cannot be blank');
+	} else if(pwdValue !== cpwdValue) {
+		setErrorFor(cpwd, 'Passwords do not match');
+	} else{
+		setSuccessFor(cpwd);
+	}
 }
 
 function setErrorFor(input, message) {

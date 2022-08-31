@@ -98,8 +98,11 @@ form {
 }
 
 #create-account {
-    padding: 0.7em 2.7em;
+    padding: 1em 3em;
     color: white;
+    font-family: inherit;
+    width: 15em;
+    margin-top: 0.3em;
     background-color: rgb(213, 106, 167);
     border-color: rgb(198, 81, 147);
     border-style: double;
@@ -107,6 +110,10 @@ form {
     font-weight: 600;
     border-radius: .5em;
     box-shadow: 0 5px 8px 0 #e0e0e0;
+}
+
+button:hover {
+    color: rgb(203, 142, 177);
 }
 
 #text13 {
@@ -146,6 +153,10 @@ input {
     width: 15em;
 }
 
+input:focus {
+	outline-color: rgb(22, 194, 197);
+}
+
 #sidebar {
     background-color: #9191917c;
     padding: 2em;
@@ -161,11 +172,8 @@ input {
 }
 
 .credits {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    position: fixed;
-    top: 50em;
+    position: absolute;
+    bottom: 0em;
     left: 11em;
     font-weight: 800;
     font-size: 1.2em;
@@ -185,3 +193,11 @@ input {
     border-color: #2ecc71;
 }
 
+small {
+    color: red;
+    visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
