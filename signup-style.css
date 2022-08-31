@@ -112,8 +112,12 @@ form {
     box-shadow: 0 5px 8px 0 #e0e0e0;
 }
 
-button:hover {
-    color: rgb(203, 142, 177);
+#create-account:hover {
+    background-color: rgb(208, 118, 169);
+}
+
+#create-account:active {
+    background-color: rgb(204, 65, 143)
 }
 
 #text13 {
@@ -185,12 +189,14 @@ input:focus {
     color:rgb(252, 163, 215);
 }
 
-.form-control.error {
-    border-color: #e74c3c;
+.form-control.error input {
+    border-color: #ff0000;
+    border-style: groove;
 }
 
-.form-control.success {
+.form-control.success input {
     border-color: #2ecc71;
+    border-style: groove;
 }
 
 small {
